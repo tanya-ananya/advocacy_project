@@ -1,0 +1,195 @@
+/* Add CSS styles for your web site here and use them in index.html. */
+
+@font-face {
+  font-family: 'Cormorant Infant';
+  src: url(fonts/CormorantInfant-Medium.ttf);
+}
+
+html {
+  background-color: rgb(219, 219, 219);
+}
+
+img {
+  width: 100%;
+} 
+
+body {
+  background-color: rgb(219, 219, 219);
+  font-family: "Cormorant Infant", serif;
+  font-size: 22px;
+  color: rgb(56, 56, 56);
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 33px;
+}
+
+p {
+  margin: 2% 3%;
+}
+
+.news-articles {
+  color: rgb(0, 0, 151);
+}
+
+body a:visited {
+  color: blueviolet;
+}
+
+body a:hover {
+  color: rgb(97, 86, 139);
+}
+
+body a:active {
+  color: aquamarine;
+}
+
+ul {
+  list-style-type: upper-latin;
+}
+
+ul li {
+  font-size: 21px;
+}
+
+.button-container {
+  display: flex; 
+  justify-content: center;
+}
+
+button {
+  font-family: "Cormorant Infant", serif;
+  background-color: #016752;
+  color: white;
+  font-size: 20px;
+  padding: 1% 2%;
+  border-radius: 8%;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  margin: 1%;
+  transition: background-color 0.3s;
+}
+
+footer {
+  background-color: rgb(161, 160, 160);
+  margin: 0;
+  padding: 2%;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+
+footer a {
+  color: rgb(56, 56, 56); 
+  text-decoration: underline;
+}
+
+.images {
+  height: 100px;
+  object-fit: cover;
+  position: relative;
+}
+
+.header {
+  margin-bottom: 7%;
+}
+
+.header-container {
+  margin: 0.5% 0.5% 0.5% 0%;
+  background-color: rgb(197, 196, 196);
+  padding: 3% 3% 5% 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  margin: 1%;
+  padding: 1%;
+}
+
+#intro {
+  font-size: 26px;
+  margin: 2% 1%;
+}
+
+#header-img {
+  width: 100%;
+  max-width: max-content;
+  margin-top: -5%;
+}
+
+#top {
+  padding-left: 3%;
+}
+
+.header-item:nth-of-type(1) {
+  flex: 1;
+}
+
+.header-item:nth-of-type(2) {
+  flex: 1;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgb(161, 160, 160);
+  position: fixed;
+  top: 0;
+  padding: 2.5%;
+  border-bottom-left-radius: 40%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  margin-right: 5%;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  font-family: "Cormorant Infant", serif;
+  background-color: #016752;
+  color: white;
+  font-size: 20px;
+  padding: 8px 20px;
+  border-radius: 8%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  font-weight: bold;
+}
+
+/* Part 2: Flexbox */
+
+/* General style rule set for flex container */
+.flex-container {
+display: flex;
+flex-direction: row;
+gap: 1%;
+}
+
+.flex-item {
+  background: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
