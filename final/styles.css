@@ -1,0 +1,335 @@
+/* Add CSS styles for your web site here and use them in index.html. */
+
+@font-face {
+  font-family: 'Cormorant Infant';
+  src: url(fonts/CormorantInfant-Medium.ttf);
+}
+
+html {
+  background-color: rgb(219, 219, 219);
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: rgb(219, 219, 219);
+  font-family: "Cormorant Infant", serif;
+  font-size: 22px;
+  color: rgb(56, 56, 56);
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 33px;
+}
+
+p {
+  margin: 2% 3%;
+}
+
+.news-articles {
+  color: rgb(0, 0, 151);
+}
+
+body a:visited {
+  color: blueviolet;
+}
+
+body a:hover {
+  color: rgb(97, 86, 139);
+}
+
+body a:active {
+  color: aquamarine;
+}
+
+ul {
+  list-style-type: upper-latin;
+}
+
+ul li {
+  font-size: 21px;
+}
+
+.button-container {
+  display: flex; 
+  justify-content: center;
+}
+
+button {
+  font-family: "Cormorant Infant", serif;
+  background-color: #016752;
+  color: white;
+  font-size: 20px;
+  padding: 1% 2%;
+  border-radius: 8%;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  margin: 1%;
+  transition: background-color 0.3s;
+}
+
+footer {
+  background-color: #016752;
+  margin: 0;
+  padding: 1%;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 80%;
+}
+
+footer a {
+  color: #d7faf4; 
+  text-decoration: underline;
+  opacity: 100%;
+}
+
+footer a:visited {
+  color: #f4fffd;
+}
+
+.images {
+  height: 100px;
+  object-fit: cover;
+  position: relative;
+}
+
+.header {
+  margin-bottom: 7%;
+}
+
+.header-container {
+  margin: 0.5% 0.5% 0.5% 0%;
+  background-color: rgb(197, 196, 196);
+  padding: 3% 3% 5% 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  margin: 1%;
+  padding: 1%;
+  margin-bottom: 7%;
+}
+
+#intro {
+  font-size: 26px;
+  margin: 2% 1%;
+}
+
+#header-img {
+  width: 100%;
+  max-width: max-content;
+  margin-top: -5%;
+}
+
+#top {
+  padding-left: 3%;
+}
+
+.header-item:nth-of-type(1) {
+  flex: 1;
+}
+
+.header-item:nth-of-type(2) {
+  flex: 1;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #016752;
+  position: fixed;
+  top: 0;
+  padding: 1.5%;
+  opacity: 80%;
+}
+
+.navbar ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  margin-right: 5%;
+  opacity: 100%;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+  opacity: 100%;
+}
+
+.navbar ul li a{
+  font-family: "Cormorant Infant", serif;
+  color: #f4fffd;
+  font-size: 21px;
+  border-radius: 8%;
+  text-align: center;
+  text-decoration: none;
+  opacity: 100%;
+}
+
+.navbar ul li a:hover {
+  font-weight: bold;
+  color: rgb(148, 225, 194);
+  opacity: 100%;
+}
+
+#theme-button {
+  font-family: "Cormorant Infant", serif;
+  background-color: #d7faf4;
+  color: #004f3f;
+  font-weight: bold;
+  font-size: 19px;
+  padding: 1px 6px;
+  cursor: pointer;
+  margin-top: -10;
+  opacity: 100%;
+}
+
+#theme-button:hover {
+  font-weight: bold;
+  opacity: 100%;
+}
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: rgb(42, 42, 42);
+  color: #d1e7e3;
+}
+
+.dark-mode .header-container {
+  background-color: black;
+}
+
+.dark-mode footer{
+  background-color: #018369;
+  color: #d1e7e3;
+}
+
+.dark-mode footer a {
+  color: #d1e7e3;
+}
+
+.dark-mode footer a:visited {
+  color: #f4fffd;
+}
+
+.dark-mode .news-articles {
+  color: #d1e7e3;
+}
+
+/* Add to CSS file */
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+/* Part 2: Flexbox */
+
+/* General style rule set for flex container */
+.flex-container {
+display: flex;
+flex-direction: row;
+gap: 1%;
+}
+
+.flex-item {
+  background: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100;
+  padding-bottom: 50px;
+}
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+
+.revealable {
+  position: relative;    
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.revealable.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: lightsteelblue;
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 750px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#thanks-modal img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+#thanks-modal-content {
+  width: 20rem;
+}
+
+#modal-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
